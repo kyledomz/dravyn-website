@@ -15,10 +15,10 @@ function Collage() {
         <motion.div
           className="collage-image"
           key={i}
-          initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+          initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.3 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <div className="image-text">{img.text}</div>
           <img src={img.src} alt={img.alt} />
