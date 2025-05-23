@@ -1,0 +1,23 @@
+.social-icons {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  gap: 15px;
+  z-index: 1100;
+}
+
+.social-icons a {
+  font-size: 0.7rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  background: #1f1c24;
+  transform: scale(1.1);
+}

@@ -1,0 +1,50 @@
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.collage-image {
+  flex: 1 1 200px; /* flexible width, min 200px */
+  max-width: 450px; /* max width */
+  text-align: center; /* center the description text */
+  cursor: pointer;
+}
+
+.image-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* dark text */
+  font-weight: 600;
+}
+
+.collage-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collage-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive - stack vertically on small screens */
+@media (max-width: 600px) {
+  .collage {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .collage-image {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .image-text {
+    font-size: 0.9rem;
+  }
+}
